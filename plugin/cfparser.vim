@@ -67,7 +67,7 @@ endif
 
 "}}}
 " Command definitions "{{{
-command! -nargs=0 MyLogin call myparser#CFLogin()
+command! -nargs=0 MyLogin call myplugin#CFLogin()
 " command! -nargs=0 CFLogout call cfparser#CFLogout()
 " command! -nargs=0 CFWhoAmI call cfparser#CFWhoAmI()
 " command! -nargs=0 CFProblemStatement call cfparser#CFProblemStatement()

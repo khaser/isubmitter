@@ -22,6 +22,7 @@ endfunction
 
 "}}}
 function! myplugin#Submit() "{{{
+:	w
 	while !s:login
 		call myplugin#Login()
 	endwhile

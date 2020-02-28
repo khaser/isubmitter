@@ -12,7 +12,7 @@ Plug 'khaser/isubmitter'
 ```
 
 ## Usage
-- `<F4>` - Login to you account and submit your solution
+- `<F4>` - Login to your account and submit your solution
 
 When using the submit, this plugin will "guess" task id by the current file name. 
 It should be in the following form:

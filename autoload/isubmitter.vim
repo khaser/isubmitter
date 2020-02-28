@@ -2,7 +2,7 @@
 let s:host = 'informatics.msk.ru'
 let s:proto = 'https'
 let s:login = 0
-let g:cookie_path = '~/.vim/plugged/myplugin/.myplugin_cookies'
+let g:cookie_path = '~/.vim/plugged/isubmitter/.isubmitter_cookies'
 
 "}}}
 function! isubmitter#Login() "{{{

@@ -3,7 +3,9 @@ A [informatics](informatics.msk.ru) submitter plugin for vim
 
 ## Installation
 - Install `curl`.
-- Install `isubmitter` with your favorite vim plugin manager. If you use [`vim-plug`](https://github.com/junegunn/vim-plug):
+- Install `isubmitter` with your favorite vim plugin manager. 
+If you use [`vim-plug`](https://github.com/junegunn/vim-plug):
+If you use ['']
 
 ```
 Plug 'khaser/isubmitter'

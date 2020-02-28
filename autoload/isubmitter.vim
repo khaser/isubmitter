@@ -5,7 +5,7 @@ let s:login = 0
 let g:cookie_path = '~/.vim/plugged/myplugin/.myplugin_cookies'
 
 "}}}
-function! myplugin#Login() "{{{
+function! isubmitter#Login() "{{{
 	let s:uname = input('username: ')
 	let s:passwd = inputsecret('password: ')
 
@@ -21,10 +21,10 @@ function! myplugin#Login() "{{{
 endfunction
 
 "}}}
-function! myplugin#Submit() "{{{
+function! isubmitter#Submit() "{{{
 :	w
 	while !s:login
-		call myplugin#Login()
+		call isubmitter#Login()
 	endwhile
 
 	let task = expand('%:t:r')

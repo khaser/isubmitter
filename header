@@ -1,0 +1,12 @@
+Host: informatics.msk.ru
+User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:73.0) Gecko/20100101 Firefox/73.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: multipart/form-data
+Content-Length: 1122
+Origin: https://informatics.msk.ru
+Connection: keep-alive
+Referer: https://informatics.msk.ru/mod/statements/view3.php?chapterid=98
+Cookie: _ym_uid=1582869344424816493; _ym_d=1582869344; _ym_isad=2; _ym_visorc_53418979=w; MoodleSession=f719kccrotq1khbep3r1vqdi60; MoodleSessionTest=pTXbB2lCE8; MOODLEID_=%25E2%25DF%251AO%25A5%257F%25E5
+Upgrade-Insecure-Requests: 1

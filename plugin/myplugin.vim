@@ -67,7 +67,7 @@ endif
 
 "}}}
 " Command definitions "{{{
-command! -nargs=0 MyLogin call myplugin#CFLogin()
+command! -nargs=0 MyLogin call myplugin#Login()
 " command! -nargs=0 CFLogout call cfparser#CFLogout()
 " command! -nargs=0 CFWhoAmI call cfparser#CFWhoAmI()
 " command! -nargs=0 CFProblemStatement call cfparser#CFProblemStatement()
@@ -75,12 +75,12 @@ command! -nargs=0 MyLogin call myplugin#CFLogin()
 " command! -nargs=0 CFClearTests call cfparser#CFClearTests()
 " command! -nargs=0 CFTestAll call cfparser#CFTestAll()
 " command! -nargs=0 CFRun call cfparser#CFRun()
-" command! -nargs=0 CFSubmit call cfparser#CFSubmit()
+command! -nargs=0 MySubmit call myplugin#Submit()
 " command! -nargs=? CFLastSubmissions call cfparser#CFLastSubmissions(<args>)
 
 "}}}
 " Keys definitions "{{{
-nmap <F4> :MyLogin<CR>
+" nmap <F4> :MyLogin<CR>
 " nmap <leader>cfo :CFLogout<CR>
 " nmap <leader>cfw :CFWhoAmI<CR>
 " nmap <leader>cfp :CFProblemStatement<CR>
@@ -88,7 +88,7 @@ nmap <F4> :MyLogin<CR>
 " nmap <leader>cfc :CFClearTests<CR>
 " map <F3>		 :CFTestAll<CR>
 " nmap <leader>cfr :CFRun<CR>
-" nmap <leader>cfs :CFSubmit<CR>
+nmap <F4> :MySubmit<CR>
 " nmap <leader>cfl :CFLastSubmissions<CR>
 "}}}
 " vim:foldmethod=marker:foldlevel=0

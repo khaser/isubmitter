@@ -2,7 +2,7 @@
 let s:host = 'informatics.msk.ru'
 let s:proto = 'https'
 let s:login = 0
-let g:cookie_path = '~/.vim/plugged/isubmitter/.isubmitter_cookies'
+let g:cookie_path = '~/.vim/.isubmitter_cookies'
 
 "}}}
 function! isubmitter#Login() "{{{
@@ -22,20 +22,20 @@ endfunction
 
 "}}}
 function! isubmitter#Submit() "{{{
-:	w
-	while !s:login
-		call isubmitter#Login()
-	endwhile
+:   w
+    while !s:login
+        call isubmitter#Login()
+    endwhile
 
-	let task = expand('%:t:r')
-	let path = expand('%:p')
-	let s:response = system(printf('curl --silent --cookie %s -F "file=@%s" -F "lang_id=3" https://informatics.msk.ru/py/problem/%s/submit', g:cookie_path, path, task))	
-	echon "\r\r"
-	if empty(matchstr(s:response, 'success'))
-		echom "submit: failed"
-	else
-		echom "submit: ok"
-       endif
+    let task = expand('%:t:r')
+    let path = expand('%:p')
+    let s:response = system(printf('curl --silent --cookie %s -F "file=@%s" -F "lang_id=3" https://informatics.msk.ru/py/problem/%s/submit', g:cookie_path, path, task))
+    echon "\r\r"
+    if empty(matchstr(s:response, 'success'))
+        echom "submit: failed"
+    else
+        echom "submit: ok"
+    endif
 endfunction
 
 "}}}

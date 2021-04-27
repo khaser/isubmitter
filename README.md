@@ -1,5 +1,6 @@
+# DEPRECATED
 # informatics submitter for vim
-A [informatics](informatics.msk.ru) submitter plugin for vim
+A [informatics](informatics.msk.ru) submitter plugin for vim 
 
 ## Installation
 - Install `curl`.
